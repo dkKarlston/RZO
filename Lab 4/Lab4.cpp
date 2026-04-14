@@ -1,4 +1,4 @@
-/*#include <opencv2/opencv.hpp>
+#include <opencv2/opencv.hpp>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -108,12 +108,8 @@ int main(int argc, char** argv) {
         Point textOrg(center.x - textSize.width / 2, center.y - textSize.height / 2 - 5);
 
 
-    
-
-        // Рисуем текст белым цветом
         putText(result, label, textOrg, fontFace, fontScale, Scalar(0,0, 0), thickness);
 
-        // Вывод информации в консоль
         cout << "Фигура " << shapeCount << ": " << shapeName
             << " | Периметр = " << fixed << setprecision(1) << perimeter
             << " | Центр = (" << fixed << setprecision(0) << center.x
@@ -131,12 +127,11 @@ int main(int argc, char** argv) {
     resize(edges, smallEdges, Size(), scale, scale);
     resize(result, smallResult, Size(), scale, scale);
 
-    // Отображение результатов в уменьшенных окнах
+
     namedWindow("Original", WINDOW_NORMAL);
     namedWindow("Canny Edges", WINDOW_NORMAL);
     namedWindow("Result", WINDOW_NORMAL);
 
-    // Устанавливаем размер окон
     resizeWindow("Original", smallOriginal.cols, smallOriginal.rows);
     resizeWindow("Canny Edges", smallEdges.cols, smallEdges.rows);
     resizeWindow("Result", smallResult.cols, smallResult.rows);
@@ -145,11 +140,10 @@ int main(int argc, char** argv) {
     imshow("Canny Edges", smallEdges);
     imshow("Result", smallResult);
 
-    // Сохранение результата
+
     imwrite("result_with_contours.png", result);
     cout << "\nРезультат сохранен в result_with_contours.png" << endl;
 
     waitKey(0);
     return 0;
 }
-*/
