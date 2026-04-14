@@ -1,4 +1,4 @@
-/*#include <opencv2/opencv.hpp>
+#include <opencv2/opencv.hpp>
 #include <iostream>
 #include <cstdlib>  
 #include <ctime>    
@@ -36,9 +36,9 @@ int main() {
     int dx = 4;
     int dy = 3;
 
-    cout << "Àíèìàöèÿ çàïóùåíà. Íàæìèòå ESC äëÿ âûõîäà..." << endl;
-    cout << "Ðàçìåð òåêñòà: øèðèíà = " << textSize.width
-        << ", âûñîòà = " << textSize.height << endl;
+    cout << "Ã€Ã­Ã¨Ã¬Ã Ã¶Ã¨Ã¿ Ã§Ã Ã¯Ã³Ã¹Ã¥Ã­Ã . ÃÃ Ã¦Ã¬Ã¨Ã²Ã¥ ESC Ã¤Ã«Ã¿ Ã¢Ã»ÃµÃ®Ã¤Ã ..." << endl;
+    cout << "ÃÃ Ã§Ã¬Ã¥Ã° Ã²Ã¥ÃªÃ±Ã²Ã : Ã¸Ã¨Ã°Ã¨Ã­Ã  = " << textSize.width
+        << ", Ã¢Ã»Ã±Ã®Ã²Ã  = " << textSize.height << endl;
     cout << "Baseline = " << baseline << endl;
 
     while (true) {
@@ -88,7 +88,7 @@ int main() {
     putText(finalImage, text, textPos, fontFace, fontScale, textColor, thickness);
     imwrite("SavedFigure.jpg", finalImage);
 
-    cout << "Àíèìàöèÿ çàâåðøåíà. Èçîáðàæåíèå ñîõðàíåíî." << endl;
+    cout << "Ã€Ã­Ã¨Ã¬Ã Ã¶Ã¨Ã¿ Ã§Ã Ã¢Ã¥Ã°Ã¸Ã¥Ã­Ã . ÃˆÃ§Ã®Ã¡Ã°Ã Ã¦Ã¥Ã­Ã¨Ã¥ Ã±Ã®ÃµÃ°Ã Ã­Ã¥Ã­Ã®." << endl;
 
     return 0;
-}*/
+}
