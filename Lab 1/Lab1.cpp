@@ -1,4 +1,4 @@
-﻿/*#include <opencv2/opencv.hpp>
+﻿#include <opencv2/opencv.hpp>
 #include <iostream>
 
 int main()
@@ -37,4 +37,4 @@ int main()
 
     cv::waitKey(0);
     return 0;
-}*/
+}
